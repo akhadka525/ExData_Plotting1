@@ -50,12 +50,12 @@ data_power <- subset(data, Date >= "2007-02-01" & Date <= "2007-02-02")
 
 ## Plot histogram and save plot in Plot1.png
 
-{png("plot1.png", width=720, height=720)
-
-hist(data_power$Global_active_power, main = "Global Active Power",
-     xlab = "Global Active Power (kilowatts)", ylab= "Frequency",
-     col="Red")
-
-dev.off()
+{
+        png("plot1.png", width=720, height=720)
+        
+        hist(data_power$Global_active_power, main = "Global Active Power",
+             xlab = "Global Active Power (kilowatts)", ylab= "Frequency",
+             col="Red")
+        
+        dev.off()
 }
-
