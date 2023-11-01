@@ -50,11 +50,11 @@ data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
 
 data_power <- subset(data, Date >= "2007-02-01" & Date <= "2007-02-02")
 
-## Merge Datetime to make single column and format to dattime format
+## Merge Datetime to make single column and format to datetime format
 
 data_power$DateTime <- as.POSIXct(paste(as.Date(data_power$Date), data_power$Time))
 
-## Plot Timeseries of Global Active Power and save plot in Plot3.png
+## Plot Energy sub metering and save plot in Plot3.png
 
 {
         png("Plot3.png", width=720, height=720)
